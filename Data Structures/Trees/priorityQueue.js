@@ -109,12 +109,12 @@ class priorityQueue {
       } else if (swapLeft) {
         this.swap(sinkIdx, leftChildIdx);
         sinkIdx = leftChildIdx;
-        setChild(this);
+        setChild(this.findChild, this.queue);
         continue;
       } else if(swapRight) {
         this.swap(sinkIdx, rightChildIdx);
         sinkIdx = rightChildIdx;
-        setChild(this);
+        setChild(this.findChild, this.queue);
         continue;
       } else {
         break;
@@ -125,39 +125,39 @@ class priorityQueue {
   }
 }
 
-var queue = new priorityQueue;
+// var queue = new priorityQueue;
 
-queue.enqueue(10, 3);
-queue.enqueue(10, 4);
-queue.enqueue(10, 6);
-queue.enqueue(10, 7);
-queue.enqueue(10, 2);
-queue.enqueue(10, 1);
+// queue.enqueue(10, 3);
+// queue.enqueue(10, 4);
+// queue.enqueue(10, 6);
+// queue.enqueue(10, 7);
+// queue.enqueue(10, 2);
+// queue.enqueue(10, 1);
 
-console.log(queue);
+// console.log(queue);
 
-queue.dequeue();
-console.log(queue);
-queue.dequeue();
-console.log(queue);
-queue.dequeue();
-console.log(queue);
-queue.dequeue();
-console.log(queue);
-queue.dequeue();
-console.log(queue);
-queue.dequeue();
-console.log(queue);
-queue.dequeue();
-console.log(queue);
-queue.dequeue();
-console.log(queue);
-queue.dequeue();
-console.log(queue);
-queue.dequeue();
-console.log(queue);
-queue.dequeue();
-console.log(queue);
+// queue.dequeue();
+// console.log(queue);
+// queue.dequeue();
+// console.log(queue);
+// queue.dequeue();
+// console.log(queue);
+// queue.dequeue();
+// console.log(queue);
+// queue.dequeue();
+// console.log(queue);
+// queue.dequeue();
+// console.log(queue);
+// queue.dequeue();
+// console.log(queue);
+// queue.dequeue();
+// console.log(queue);
+// queue.dequeue();
+// console.log(queue);
+// queue.dequeue();
+// console.log(queue);
+// queue.dequeue();
+// console.log(queue);
 
 
 
